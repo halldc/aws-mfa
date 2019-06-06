@@ -377,7 +377,7 @@ def get_credentials(
     )
 
     # Copy long term options if available
-    copy_options = ['region']
+    copy_options = ['aws_default_region']
     for option in copy_options:
         if config.has_option(long_term_name, option):
             config.set(
